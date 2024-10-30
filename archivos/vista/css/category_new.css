@@ -1,0 +1,132 @@
+
+/* Estilos para Nueva Categorias de la Biblioteca */
+
+/* CONFIGURACIÓN GENERAL PARA EL CONTENEDOR DEL FORMULARIO */
+#addSectionForm {
+    max-width: 800px; /* LIMITA EL ANCHO MÁXIMO PARA MEJORAR LA LEGIBILIDAD */
+    margin: 0 auto; /* CENTRA EL FORMULARIO */
+    padding: 20px; /* AGREGA ESPACIO DENTRO DEL CONTENEDOR */
+    background-color: #fff; /* UTILIZA EL COLOR DE FONDO TERCIARIO */
+    border-radius: 10px; /* AGREGA ESQUINAS REDONDEADAS */
+    box-shadow: #3498db; /* AGREGA UNA SOMBRA SUTIL PARA DAR PROFUNDIDAD */
+}
+
+
+/* ESTILO DEL TÍTULO */
+.title {
+    font-size: 6em; /* Aumenta el tamaño de la fuente aún más */
+    color: #3498db; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: bold; /* Asegura que el texto sea grueso */
+    line-height: 1.2; /* Controla la altura de la línea */
+    white-space: normal; /* Permite los saltos de línea */
+}
+
+/* ESTILO DE LAS ETIQUETAS (LABELS) */
+.label {
+    font-size: 1.2em; /* AUMENTA EL TAMAÑO DE LA FUENTE PARA MEJOR LEGIBILIDAD */
+    color: #333; /* UTILIZA EL COLOR DE TEXTO PRIMARIO */
+    margin-bottom: 5px; /* AGREGA ESPACIO DEBAJO DE LAS ETIQUETAS */
+}
+
+/* ESTILO DE LOS INPUTS Y SELECTS */
+.input,
+select {
+    font-size: 1em; /* ESTABLECE EL TAMAÑO DE LA FUENTE */
+    padding: 10px; /* AGREGA PADDING PARA MEJORAR LA INTERACTIVIDAD */
+    border: 2px solid #3498db; /* AGREGA UN BORDE CON EL NUEVO COLOR */
+    border-radius: 5px; /* AGREGA ESQUINAS REDONDEADAS */
+    width: 100%; /* HACE QUE LOS INPUTS Y SELECTS OCUPEN EL ANCHO COMPLETO */
+    box-sizing: border-box; /* ASEGURA QUE EL PADDING Y EL BORDE ESTÉN INCLUIDOS EN EL ANCHO */
+}
+
+/* AGREGA EFECTOS DE ENFOQUE (FOCUS) PARA INPUTS Y SELECTS */
+.input:focus,
+select:focus {
+    border-color: var(--color-info); /* CAMBIA EL COLOR DEL BORDE AL ENFOCAR */
+    outline: none; /* ELIMINA EL OUTLINE PREDETERMINADO */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* AGREGA UNA SOMBRA AL ENFOCAR */
+}
+
+/* ESTILO DEL BOTÓN */
+.create-button {
+    background-color: #3498db; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto del botón */
+    border: 2px solid #3498db; /* Cambia el color del borde del botón */
+    padding: 10px 20px; /* Ajusta el espaciado del botón */
+    border-radius: 5px; /* Ajusta los bordes redondeados del botón */
+    font-size: 16px; /* Ajusta el tamaño de la fuente del botón */
+    cursor: pointer; /* Cambia el cursor cuando se pasa sobre el botón */
+    transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color */
+}
+
+/* EFECTO DE HOVER EN EL BOTÓN */
+.create-button:hover {
+    background-color: #04324d; /* Cambia el color de fondo del botón cuando se pasa el ratón sobre él */
+}
+
+/* CENTRAR EL BOTÓN */
+.control.has-text-centered {
+    text-align: right; /* ALINEA EL TEXTO (BOTÓN) A LA IZQUIERDA */
+    margin-top: 30px; /* MANTIENE EL ESPACIO SUPERIOR */
+}
+
+
+/* ESTILO DE LAS COLUMNAS */
+.columns.container {
+    display: flex; /* UTILIZA FLEXBOX PARA EL LAYOUT */
+    justify-content: space-between; /* DISTRIBUYE LAS COLUMNAS UNIFORMEMENTE */
+    flex-wrap: wrap; /* PERMITE QUE LAS COLUMNAS SE ENVUELVAN EN PANTALLAS MÁS PEQUEÑAS */
+}
+
+/* ESTILO DE LAS COLUMNAS INDIVIDUALES */
+
+.container {
+    max-width: 90%; /* Ajusta el ancho máximo del contenedor general */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.column.is-full {
+    flex: 0 0 100%; /* Asegura que la columna ocupe todo el ancho disponible */
+}
+
+.field {
+    margin-bottom: 20px; /* Espaciado entre los campos */
+}
+
+.input, .select, .textarea {
+    width: 100%; /* Asegura que los campos ocupen todo el ancho disponible */
+}
+
+.textarea {
+    height: 120px; /* Ajusta la altura del campo de descripción si es necesario */
+}
+
+
+/* Estilo del botón "Volver" */
+.btn-volver {
+    background-color: #3498db; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: 2px solid #3498db; /* Borde del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 50px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+    position: fixed; /* Fija el botón en la pantalla */
+    top: 20px; /* Posición desde la parte superior */
+    right: 20px; /* Posición desde la parte derecha */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Efecto hover en el botón */
+.btn-volver:hover {
+    background-color: #29690b; /* Cambia el color de fondo al pasar el mouse */
+    border-color: #29690b; /* Cambia el color del borde al pasar el mouse */
+    transform: scale(1.05); /* Pequeño zoom al pasar el mouse */
+}
+
+
+
+

@@ -1,0 +1,158 @@
+/* inicio de titulos y navegacion interna  */
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 16px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-out;
+  max-width: 1400px;
+  width: 99%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #04324d;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  /* Ajusta el valor según el nivel de redondez deseado */
+  margin: 10px;
+  /* Añade un margen para separarlo de otros elementos */
+}
+
+.nav-link {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #34495e;
+  color: #2ecc71;
+  transform: translateY(-2px);
+}
+
+img {
+  border-style: none;
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: var(--web-margin);
+  padding: 1.0rem 1.5rem;
+  align-items: center;
+}
+
+.navbar__cpv--logo {
+  height: 2.2rem !important;
+}
+
+.navbar-brand__logo {
+  height: 4rem;
+}
+
+.nav-link i {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.fa-solid,
+.fas {
+
+  font-weight: 900;
+}
+/* inicio titulo */
+
+/* Estilo para el título principal */
+
+
+.divider {
+  height: 6px;
+  width: 150px;
+  background-color: #04324d;
+  margin: 30px auto;
+  border-radius: 3px;
+}
+.text{
+  font-size:2rem;
+  }
+.carrousel {
+  width: 99%;
+  height: 90%;
+
+}
+
+.revista {
+  width: 90%;
+  height: 90%;
+}
+
+
+.nav-link {
+  display: inline-block;
+}
+
+
+/* inicio de estilo de cambio de idioma */
+.language-select-container {
+  position: absolute;
+  top: 20px;
+  /* Ajusta esto para mover el contenedor hacia abajo o hacia arriba */
+  left: 20px;
+  /* Ajusta esto para mover el contenedor hacia la derecha o hacia la izquierda */
+  background-color: rgba(240, 240, 240, 0.5);
+  /* Fondo semi-transparente */
+  padding: 10px;
+  /* Espaciado interno */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  /* Sombra para dar profundidad */
+}
+
+#language-select {
+  width: 80px;
+  /* Ajusta el ancho del select */
+  padding: 5px;
+  /* Espaciado interno para el select */
+  border: 2px solid rgba(204, 204, 204, 0.7);
+  /* Borde semi-transparente */
+  border-radius: 64px;
+  /* Bordes redondeados */
+  font-size: 14px;
+  /* Tamaño de la fuente dentro del select */
+  background-color: rgba(240, 240, 240, 0.3);
+  /* Fondo semi-transparente */
+  color: rgba(0, 0, 0, 0.8);
+  /* Color del texto */
+}
+
+label {
+  margin-right: 10px;
+  /* Espaciado entre la etiqueta y el select */
+  font-size: 14px;
+  /* Tamaño de la fuente de la etiqueta */
+  color: rgba(0, 0, 0, 0.8);
+  /* Color del texto de la etiqueta */
+}
+/* Fin de estilo de cambio de idioma */
+.modal-header h1,
+.modal-body label,
+.modal-body input,
+.modal-body textarea,
+.modal-body select,
+.modal-footer button {
+    font-size: 1.5rem;
+    /* Ajusta el tamaño de la fuente para títulos y otros elementos específicos */
+}

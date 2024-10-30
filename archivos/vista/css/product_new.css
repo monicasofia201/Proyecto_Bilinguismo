@@ -1,0 +1,48 @@
+
+
+/* Estilo de las etiquetas de los campos */
+.label {
+    color: #29690b; /* Alternate color */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo de los campos de entrada */
+.input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.input:focus, select:focus {
+    border-color: #3498db; /* Color-info */
+    outline: none;
+}
+
+/* Estilo del botón de guardar */
+.create-button {
+    background-color: #3498db; /* Color-info */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Estilo para el título principal */
+.title {
+    font-size: 6em; /* Aumenta el tamaño de la fuente aún más */
+    color: #3498db; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: bold; /* Asegura que el texto sea grueso */
+    line-height: 1.2; /* Controla la altura de la línea */
+    white-space: normal; /* Permite los saltos de línea */
+}

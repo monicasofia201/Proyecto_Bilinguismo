@@ -1,0 +1,354 @@
+:root {
+    --primary: #39a900;
+    --secondary: #98fe58;
+    --tertiary: #f2ffe5;
+    --alternate: #29690b;
+    --primary-text: black;
+    --secondary-text: #5d5d5d;
+    --alternate-text: #919191;
+    --primary-background: #fff;
+    --secondary-background: #E6E6E6;
+    --alternate-background: #04324d;
+    --color-success: #52d726;
+    --color-error: #e74c3c;
+    --color-warning: #f1c40f;
+    --color-info: #ffffff;
+    --primary-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    --primary-font-family: 'Work Sans Regular', sans-serif;
+    --secondary-font-family: 'Work Sans Bold', sans-serif;
+    --bp-small: 480px;
+    --bp-medium: 767px;
+    --bp-large: 1200px;
+    --web-margin: 1366px;
+}
+
+
+/* Estilos para el contenedor principal (layout) */
+.layout {
+    position: relative;
+    min-width: 1290px;
+    width: 90%;
+    height: 80vh;
+    min-height: 80vh;
+    margin: 9vh auto 2vh;
+    display: grid;
+    grid-template-areas: "aside content";
+    grid-template-columns: 15% 85%;
+    border-radius: 4rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid var(--primary-text); /* Añadir esta línea para el contorno negro */
+}
+
+/* Estilos para el aside (barra lateral) */  
+.text{
+    font-size:2rem;
+    }
+
+/* Estilos para la información del usuario en el aside */
+.aside__user-info {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;  
+    min-width: 30rem;
+    
+    
+    
+}
+
+/* Estilos para el pie de página del usuario */
+.user-info__footer {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+/* Estilos para el contenido principal */
+.layout__content {
+    grid-area: content;
+    height: 100%;
+    min-height: 100%;
+    
+    border-radius: 0 0 0 0;
+    overflow-y: auto;
+}
+
+/* Estilos para la página de contenido */
+.content__page {
+    
+        min-height: 50%;
+       
+        border-radius: 3.2rem;
+        display: flow-root;
+        
+ 
+}
+
+/* Estilos para el nombre de la página */
+.page__name {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para el subtítulo de la página */
+.page__job {
+    font-size: 2.1rem;
+    font-weight: lighter;
+    color: var(--color-subtitle);
+}
+@media (max-width: 768px) {
+    .carousel-70 {
+        flex: 0 0 70%;
+        /* Ajusta el ancho al 70% */
+    }
+
+    .carousel-inner {
+        position: absolute;
+        /* Ajusta el ancho al 30% */
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    html {
+        font-size: 8px; /* Reducir tamaño de fuente base para pantallas más pequeñas */
+    }
+    .title{
+        top: 2rem;
+    }
+    .layout {
+        width: 95%;
+        height: auto;
+        margin: 5vh auto;
+        grid-template-areas:
+            "content"
+            "aside";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        border-radius: 2rem;
+    }
+
+    .layout__aside {
+        border-radius: 2rem 2rem 0 0;
+        min-width: 100%;
+    }
+
+    .aside__user-info {
+        min-width: 100%;
+        align-items: center;
+    }
+
+    .user-info__footer {
+        position: relative;
+        bottom: auto;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .layout__content {
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    .content__page {
+        border-radius: 2rem;
+    }
+
+    .page__name {
+        font-size: 4rem;
+    }
+
+    .page__job {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 7px; /* Reducir más el tamaño de fuente base para pantallas muy pequeñas */
+    }
+
+    .page__name {
+        font-size: 3rem;
+    }
+
+    .page__job {
+        font-size: 1.5rem;
+    }
+}
+
+  img {
+    border-style: none;
+  }
+  
+  
+  
+
+  
+  .fa-solid,
+  .fas {
+  
+    font-weight: 900;
+  }
+  /* inicio titulo */
+  .title {
+    color: #3498db;
+  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 3em;
+    text-align: center;
+    margin: -6px 0;
+  }
+  
+  .divider {
+    height: 6px;
+    width: 150px;
+    background-color: #04324d;
+    margin: 30px auto;
+    border-radius: 3px;
+  }
+  
+  .carrousel {
+    width: 99%;
+    height: 90%;
+  
+  }
+  
+  .revista {
+    width: 90%;
+    height: 90%;
+  }
+  
+  
+
+  
+  
+  /* inicio de estilo de cambio de idioma */
+  .language-select-container {
+    position: absolute;
+    top: 20px;
+    /* Ajusta esto para mover el contenedor hacia abajo o hacia arriba */
+    left: 20px;
+    /* Ajusta esto para mover el contenedor hacia la derecha o hacia la izquierda */
+    background-color: rgba(240, 240, 240, 0.5);
+    /* Fondo semi-transparente */
+    padding: 10px;
+    /* Espaciado interno */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra para dar profundidad */
+  }
+  
+  #language-select {
+    width: 80px;
+    /* Ajusta el ancho del select */
+    padding: 5px;
+    /* Espaciado interno para el select */
+    border: 2px solid rgba(204, 204, 204, 0.7);
+    /* Borde semi-transparente */
+    border-radius: 64px;
+    /* Bordes redondeados */
+    font-size: 14px;
+    /* Tamaño de la fuente dentro del select */
+    background-color: rgba(240, 240, 240, 0.3);
+    /* Fondo semi-transparente */
+    color: rgba(0, 0, 0, 0.8);
+    /* Color del texto */
+  }
+  
+  label {
+    margin-right: 10px;
+    /* Espaciado entre la etiqueta y el select */
+    font-size: 14px;
+    /* Tamaño de la fuente de la etiqueta */
+    color: rgba(0, 0, 0, 0.8);
+    /* Color del texto de la etiqueta */
+  }
+  /* Fin de estilo de cambio de idioma */
+
+
+
+  @media (max-width: 768px) {
+    .custom-carousel-container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .custom-carousel .carousel-inner img {
+        height: auto;
+        max-height: 250px;
+    }
+
+    .bilingualism__english-cards {
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bilingualism__english-levels {
+        margin-bottom: 15px;
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .main-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .custom-carousel .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bilingualism__english-imgs {
+        width: 100%;
+        height: auto;
+    }
+
+    #language-select {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        display: none;
+    }
+
+    .custom-carousel-container {
+        padding: 2px;
+    }
+
+    .custom-carousel .carousel-inner img {
+        max-height: 200px; /* Ajusta la altura máxima de las imágenes */
+    }
+
+    .bilingualism__english-levels {
+        margin-bottom: 10px; /* Ajusta el margen para mejorar la disposición */
+    }
+
+    .bilingualism__english-cards {
+        flex-direction: column; /* Asegura que las tarjetas estén en una sola columna */
+    }
+
+    #language-select {
+        font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+}
+@media (max-width: 320px) {
+    .custom-carousel .carousel-inner img {
+        max-height: 150px; /* Reduce la altura máxima para pantallas más pequeñas */
+    }
+
+    .bilingualism__english-levels {
+        margin-bottom: 5px; /* Reduce el margen para aprovechar mejor el espacio */
+    }
+
+    #language-select {
+        font-size: 12px; /* Reduce aún más el tamaño del texto */
+    }
+}

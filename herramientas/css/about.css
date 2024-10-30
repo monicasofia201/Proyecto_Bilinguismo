@@ -1,0 +1,300 @@
+:root {
+    --primary: #39a900;
+    --secondary: #98fe58;
+    --tertiary: #f2ffe5;
+    --alternate: #29690b;
+    --primary-text: black;
+    --secondary-text: #5d5d5d;
+    --alternate-text: #919191;
+    --primary-background: #fff;
+    --secondary-background: #E6E6E6;
+    --alternate-background: #04324d;
+    --color-success: #52d726;
+    --color-error: #e74c3c;
+    --color-warning: #f1c40f;
+    --color-info: #ffffff;
+    --primary-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    --primary-font-family: 'Work Sans Regular', sans-serif;
+    --secondary-font-family: 'Work Sans Bold', sans-serif;
+    --bp-small: 480px;
+    --bp-medium: 767px;
+    --bp-large: 1200px;
+    --web-margin: 1366px;
+}
+
+
+/* estas en las tarjetas de las noticias no borrar y hacer response  */
+.imag {
+    max-width: 100%;
+    /* La imagen no excederá el 100% del ancho del contenedor */
+    height: auto;
+    /* La altura se ajustará automáticamente para mantener la proporción */
+    display: block;
+    /* Para eliminar el espacio inferior de la imagen en los contenedores en línea */
+    margin: 0 auto;
+    /* Centrará la imagen dentro del contenedor */
+    border: 5px solid #000;
+    /* Añade un borde de 5px de color negro */
+    box-sizing: border-box;
+    /* Incluye el borde en el tamaño total del elemento */
+}
+
+.navbar-nav {
+    margin-top: 1.5rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+}
+
+/* Estilos adicionales */
+.navbar-dark .navbar-nav {
+    display: flex;
+    /* Alinea los elementos horizontalmente */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    transition: all 0.3s ease;
+    padding: 18px 15px;
+    text-decoration: none;
+    display: inline-block;
+    /* Asegura que los enlaces estén en línea */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color: #007bff;
+}
+
+.navbar-dark .navbar-nav li {
+    display: inline-block;
+    /* Asegura que los elementos de la lista estén en línea */
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-item-hover:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cabecera_menu {
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    /* Dos columnas */
+    gap: 78px;
+    justify-items: center;
+    /* Centrar elementos horizontalmente */
+    align-items: center;
+    /* Centrar elementos verticalmente */
+    border-radius: 15px;
+    padding-top: 23px;
+}
+
+.rounded-container {
+    border-radius: 16px;
+    background-color: #f2f2f2;
+    padding: 19px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: auto;
+    /* Ajuste inicial del ancho */
+    height: auto;
+    /* Ajuste inicial del alto */
+}
+
+/* estosson estilos de la tarjetas de noticias  */
+.cards {
+    position: relative;
+    width: 350px;
+    aspect-ratio: 16/9;
+    background-color: #f2f2f2;
+    border-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cards__image {
+    width: 100%;
+    height: 100%;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.cards__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--primary-background);
+
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cards:hover .cards__content {
+    transform: rotateX(0deg);
+}
+
+.cards__title {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+}
+
+.card:hover svg {
+    scale: 0;
+}
+
+.cards__description {
+    margin: 10px 0 10px;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.cards__button {
+    padding: 15px;
+    border-radius: 8px;
+    background: #777;
+    border: none;
+    color: white;
+}
+
+.secondary {
+    background: transparent;
+    color: #777;
+    border: 1px solid #777;
+}
+
+#noticia_creada {
+    width: 100%;
+    /* Ajusta el ancho según sea necesario */
+    height: 648px;
+    /* Ajusta la altura según sea necesario */
+    overflow-y: auto;
+    /* Permite el desplazamiento vertical */
+    overflow-x: hidden;
+    /* Oculta el desplazamiento horizontal si no es necesario */
+
+    /* Añade un borde para visualización */
+    padding: 10px;
+    /* Añade padding si es necesario */
+}
+
+/* fin de las tarjetas de las noticias no borrar y hacer response  */
+
+/* estos son los stilos de los banner de los cursos */
+.banner {
+
+    top: 0;
+    left: 32px;
+    /* Cambia a right: 0; si prefieres que esté en el lado derecho */
+    width: 400px;
+    /* Ajusta el ancho según sea necesario */
+    height: 100%;
+    overflow-y: auto;
+    /* Permite desplazamiento vertical si los banners exceden la altura de la pantalla */
+    background-color: #f8f9fa;
+    /* Fondo opcional para destacar el contenedor */
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.bilingualism__english-cards-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    overflow-y: scroll;
+    height: 400px;
+    /* Adjust the height as needed */
+}
+
+.bilingualism__english-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, auto);
+    /* Adjust the number of rows if needed */
+    gap: 10px;
+}
+
+.bilingualism__english-levels {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.bilingualism__english-imgs {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.bilingualism__english-text {
+    margin-top: 10px;
+    font-size: 1.0em;
+    color: #333;
+}
+
+
+
+
+/* fin de los estilos de los banner de los cursos */
+.tite {
+    color: #3498db;
+  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 3em;
+    text-align: center;
+    margin: -6px 0;
+  }
+  
+  

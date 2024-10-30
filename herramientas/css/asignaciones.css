@@ -1,0 +1,103 @@
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: auto; /* Centra el formulario en la página */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Identificadores */
+.label-identifier {
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Estilo del cuerpo */
+
+/* lo que es */
+.course-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.course-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+h5, h6.label-identifier {
+    font-weight: bold;
+    color: #333;
+}
+
+h6.label-identifier {
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #000;
+}
+
+/* Datos no editables */
+label.data-field {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out;
+    max-width: 1400px;
+    width: 95%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #04324d;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.local {
+    left: 20px;
+    width: 10rem; /* Ajusta el tamaño según tus necesidades */
+    height: 2rem; /* Ajusta el tamaño según tus necesidades */
+    margin-bottom: 1rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    }
+    .notificacion2{
+        position: absolute;
+        left: 85%;
+    
+    }
+/* botones */
+    .create-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+    .close-button {
+        background-color: #f44336;
+        color: white;
+    }
+    .text{
+        font-size:2rem;
+        }
+

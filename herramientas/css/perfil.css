@@ -1,0 +1,318 @@
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.circle i {
+    font-size: 50px;
+    color: #777;
+}
+
+.upload-label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.upload-container input[type="file"] {
+    display: none;
+}
+/* botones */
+.create-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.close-button {
+    background-color: #f44336;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1.title {
+    font-size: 6em;  /* Tamaño más grande para el título */
+    color: #3498db;  /* Color azul */
+    margin-bottom: 20px;
+    font-weight: bold;  /* Negrita para destacar */
+    text-align: center;  /* Centrado */
+}
+
+h2.title {
+    font-size: 4em;  /* Tamaño más grande para el subtítulo */
+    color: #29690b;  /* Color verde oscuro */
+    margin-bottom: 10px;
+    text-align: center;  /* Centrado */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+.upload-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.upload-label {
+    margin-top: 20px;  /* Aumentar margen superior */
+    font-weight: bold;
+    color: #5d5d5d;
+    font-size: 1.5rem;  /* Tamaño de fuente más grande */
+}
+
+.upload-icon {
+    font-size: 2rem;  /* Tamaño de ícono más grande */
+    color: #3498db;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.col-sm-6 {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px;  /* Aumentar padding */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 1.2rem;  /* Tamaño de fuente más grande */
+}
+
+textarea.form-control {
+    height: auto;  /* Ajustar altura automáticamente */
+}
+
+.create-button,
+.close-button {
+    display: inline-block;
+    padding: 15px 30px;  /* Aumentar padding */
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;  /* Tamaño de fuente más grande */
+}
+
+.create-button {
+    background-color: #39a900;
+    color: #fff;
+    border: none;
+}
+
+.create-button:hover {
+    background-color: #29690b;
+}
+
+.close-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+}
+
+.close-button:hover {
+    background-color: #c0392b;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+.fixed-top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    color: #29690b;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.fixed-top-right:hover {
+    color: #39a900;
+}
+
+button[name="btnActualizarUsuario"] {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.upload-container button,
+.modal-footer button {
+    margin-top: 10px;
+}
+
+.modal-footer button:last-child {
+    margin-right: 0;
+}
+/* Estilos generales */
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-header, .card-body, .card-footer {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-label {
+    display: block;
+    cursor: pointer;
+}
+
+.upload-icon {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.create-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-button:hover {
+    background-color: #218838;
+}
+
+.close-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.close-button:hover {
+    background-color: #c82333;
+}
+
+.modal-content {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
+}
+
+.input-with-icon {
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon i {
+    margin-right: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+ 
+    
+
+    .card {
+        padding: 10px;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        padding: 5px;
+    }
+
+    .circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .create-button, .close-button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}

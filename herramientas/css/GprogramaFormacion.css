@@ -1,0 +1,143 @@
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: auto; /* Centra el formulario en la página */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Identificadores */
+.label-identifier {
+    font-weight: bold;
+    color: #333;
+}
+
+::selection {
+    color: #fff;
+    background: #fd7d1c;
+    }
+/* Estilo de botones */
+.local {
+    left: 20px;
+    width: 10rem; /* Ajusta el tamaño según tus necesidades */
+    height: 2rem; /* Ajusta el tamaño según tus necesidades */
+    margin-bottom: 1rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    }
+
+/* lo que es */
+.course-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.course-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.create-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.close-button {
+    background-color: #f44336;
+    color: white;
+}
+h5, h6.label-identifier {
+    font-weight: bold;
+    color: #333;
+}
+
+h6.label-identifier {
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #000;
+}
+
+/* Datos no editables */
+label.data-field {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+/* calendario */
+.calendar-day, .calendar-day-head{
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.calendar-day-head{
+    background: #ddd;
+}
+
+.notificacion2{
+    position: absolute;
+    left: 85%;
+
+}
+.text{
+    font-size:2rem;
+    }
+
+
+
+    .filter-container {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .filter-btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .filter-btn i {
+        margin-right: 5px;
+    }
+    
+    .filter-options {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        z-index: 1;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    .filter-options label {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    .apply-filters-btn {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    
